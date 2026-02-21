@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Instructor | Professional Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -21,35 +23,142 @@
     </header>
 
     <section id="hero">
-        <h1>Master Python & AI</h1>
-        <p>Expert-led courses from syntax basics to Advanced AI implementation.</p>
-        <a href="#courses" class="btn">View Courses</a>
-    </section>
+        <div class="hero-content">
+            <div class="hero-badge">&#128640; Now enrolling for 2026</div>
+            <h1>Master Python <span class="gradient-text">&amp; AI</span></h1>
+            <p>Expert-led courses from syntax basics to advanced AI implementation.<br>Learn by building real-world projects.</p>
+            <div class="hero-cta">
+                <a href="#courses" class="btn btn-primary">View Courses</a>
+                <a href="#about" class="btn btn-ghost">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-code">
+            <div class="code-window">
+                <div class="code-window-bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="code-window-title">hello.py</span>
+                </div>
+                <pre><code><span class="kw">import</span> <span class="mod">openai</span>
 
-    <section id="courses">
-        <h2>Available Courses</h2>
-        <div class="course-grid">
-            <div class="course-card">
-                <h3>Python Basics</h3>
-                <p>Start your journey. Learn variables, loops, and data structures from scratch.</p>
-            </div>
-            <div class="course-card">
-                <h3>Data Analysis</h3>
-                <p>Master Pandas, NumPy, and Matplotlib to turn raw data into insights.</p>
-            </div>
-            <div class="course-card">
-                <h3>AI Programming</h3>
-                <p>Building intelligent systems using Scikit-Learn and TensorFlow.</p>
-            </div>
-            <div class="course-card">
-                <h3>Intro to AI</h3>
-                <p>A conceptual and practical deep dive into Neural Networks and LLMs.</p>
+<span class="kw">def</span> <span class="fn">ask_ai</span>(prompt):
+    response <span class="op">=</span> openai.chat(
+        model<span class="op">=</span><span class="str">"gpt-4o"</span>,
+        messages<span class="op">=</span>[{<span class="str">"role"</span>: <span class="str">"user"</span>,
+                   <span class="str">"content"</span>: prompt}]
+    )
+    <span class="kw">return</span> response.choices[<span class="num">0</span>].message
+
+<span class="fn">ask_ai</span>(<span class="str">"Explain neural nets"</span>)</code></pre>
             </div>
         </div>
     </section>
 
+    <section id="about">
+        <div class="section-inner">
+            <div class="section-label">About</div>
+            <h2>Who teaches you matters</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a professional Python developer and educator with over a decade of hands-on industry experience. My courses blend rigorous fundamentals with practical, project-based learning so you graduate with skills that employers actually want.</p>
+                    <p>Whether you're a complete beginner or an experienced developer looking to harness the power of AI, there's a course designed for you.</p>
+                    <ul class="feature-list">
+                        <li>&#10003;&nbsp; 10+ years of industry experience</li>
+                        <li>&#10003;&nbsp; 5,000+ students taught worldwide</li>
+                        <li>&#10003;&nbsp; Project-based curriculum</li>
+                        <li>&#10003;&nbsp; Lifetime access to course materials</li>
+                    </ul>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">5K+</div>
+                    <div class="stat-label">Students</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Courses</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years Exp.</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">4.9&#9733;</div>
+                        <div class="stat-label">Avg. Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="section-inner">
+            <div class="section-label">Courses</div>
+            <h2>Available Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-icon">&#128013;</div>
+                    <h3>Python Basics</h3>
+                    <p>Start your journey. Learn variables, loops, and data structures from scratch.</p>
+                    <div class="course-meta">
+                        <span class="tag">Beginner</span>
+                        <span class="tag">8 weeks</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">&#128202;</div>
+                    <h3>Data Analysis</h3>
+                    <p>Master Pandas, NumPy, and Matplotlib to turn raw data into actionable insights.</p>
+                    <div class="course-meta">
+                        <span class="tag">Intermediate</span>
+                        <span class="tag">10 weeks</span>
+                    </div>
+                </div>
+                <div class="course-card featured">
+                    <div class="featured-badge">Popular</div>
+                    <div class="course-icon">&#129302;</div>
+                    <h3>AI Programming</h3>
+                    <p>Building intelligent systems using Scikit-Learn, TensorFlow and the OpenAI API.</p>
+                    <div class="course-meta">
+                        <span class="tag">Advanced</span>
+                        <span class="tag">12 weeks</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">&#129504;</div>
+                    <h3>Intro to AI</h3>
+                    <p>A conceptual and practical deep dive into Neural Networks and Large Language Models.</p>
+                    <div class="course-meta">
+                        <span class="tag">Intermediate</span>
+                        <span class="tag">6 weeks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-inner contact-inner">
+            <div class="section-label">Contact</div>
+            <h2>Get in touch</h2>
+            <p class="contact-sub">Have a question about a course or want to discuss team training? Drop me a message.</p>
+            <form class="contact-form" onsubmit="return false;">
+                <div class="form-row">
+                    <input type="text" placeholder="Your name" required>
+                    <input type="email" placeholder="Your email" required>
+                </div>
+                <textarea placeholder="Your message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2026 Python Instructor | Hosted on GitHub Pages</p>
+        <div class="footer-inner">
+            <div class="logo">Python<span>Mastery</span></div>
+            <p>&copy; 2026 Python Instructor &mdash; Hosted on GitHub Pages</p>
+        </div>
     </footer>
 
 </body>
