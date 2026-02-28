@@ -24,34 +24,37 @@
 
     <section id="hero">
         <div class="hero-content">
-            <div class="hero-badge">&#128640; Zápis otvorený na rok 2026</div>
-            <h1>Ovládnite Python <span class="gradient-text">&amp; AI</span></h1>
-            <p>Kurzy vedené expertom od základov syntaxe po pokročilú implementáciu AI.<br>Učte sa na reálnych projektoch.</p>
-            <div class="hero-cta">
-                <a href="#courses" class="btn btn-primary">Zobraziť kurzy</a>
-                <a href="#about" class="btn btn-ghost">Viac informácií</a>
+            <h1 class="hero-greeting">Ahoj, som <span class="gradient-text">Ján</span></h1>
+            <p class="hero-tagline">Python Inštruktor.</p>
+            <p class="hero-subtitle">Učím Python &amp; AI od základov po pokročilú úroveň.</p>
+            <p class="hero-info"><span class="info-label">Aktuálne:</span> <a href="#courses" class="info-link">Zápis otvorený na rok 2026</a></p>
+            <p class="hero-info"><span class="info-label">Skúsenosti:</span> 10+ rokov v praxi</p>
+            <a href="#contact" class="hero-contact">Napíšte mi →</a>
+        </div>
+        <div class="hero-photo">
+            <img src="janbodnar.jpg" alt="Profilová fotografia lektora">
+        </div>
+    </section>
+
+    <section id="stats-bar">
+        <div class="stats-bar-inner">
+            <div class="stats-indicator">
+                <span class="stats-dot"></span>
+                <span class="stats-label">Štatistiky kurzov:</span>
+            </div>
+            <div class="stats-badges">
+                <span class="stats-badge">5K+ študentov</span>
+                <span class="stats-badge">3 kurzy</span>
+                <span class="stats-badge">4.9★ hodnotenie</span>
             </div>
         </div>
-        <div class="hero-code">
-            <div class="code-window">
-                <div class="code-window-bar">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                    <span class="code-window-title">hello.py</span>
-                </div>
-                <pre><code><span class="kw">import</span> <span class="mod">openai</span>
+    </section>
 
-<span class="kw">def</span> <span class="fn">ask_ai</span>(prompt):
-    response <span class="op">=</span> openai.chat(
-        model<span class="op">=</span><span class="str">"gpt-4o"</span>,
-        messages<span class="op">=</span>[{<span class="str">"role"</span>: <span class="str">"user"</span>,
-                   <span class="str">"content"</span>: prompt}]
-    )
-    <span class="kw">return</span> response.choices[<span class="num">0</span>].message
-
-<span class="fn">ask_ai</span>(<span class="str">"Vysvetli neurónové siete"</span>)</code></pre>
-            </div>
+    <section id="quick-actions">
+        <div class="quick-actions-inner">
+            <a href="#courses" class="action-btn action-btn-outline">Zobraziť kurzy</a>
+            <a href="#about" class="action-btn action-btn-filled">Viac o mne</a>
+            <a href="#contact" class="action-btn action-btn-accent" aria-label="Kontaktujte ma">&#128172; Kontaktujte ma</a>
         </div>
     </section>
 
@@ -59,37 +62,18 @@
         <div class="section-inner">
             <div class="section-label">O mne</div>
             <h2>Na lektorovi záleží</h2>
-            <div class="about-grid">
-                <div class="about-photo">
-                    <img src="janbodnar.jpg" alt="Profilová fotografia lektora">
-                </div>
-                <div class="about-text">
-                    <p>Som profesionálny Python vývojár a lektor s viac ako desaťročnými skúsenosťami v praxi. Moje kurzy spájajú dôkladné základy s praktickým, projektovým učením, aby ste získali zručnosti, ktoré zamestnávatelia skutočne hľadajú.</p>
-                    <p>Či ste úplný začiatočník alebo skúsený vývojár, ktorý chce využiť silu AI, nájdete kurz navrhnutý presne pre vás.</p>
-                    <ul class="feature-list">
-                        <li>&#10003;&nbsp; 10+ rokov skúseností v praxi</li>
-                        <li>&#10003;&nbsp; 5 000+ vyškolených študentov</li>
-                        <li>&#10003;&nbsp; Projektové osnovy kurzov</li>
-                        <li>&#10003;&nbsp; Doživotný prístup k materiálom</li>
-                    </ul>
-                </div>
+            <div class="about-content">
+                <p>Som profesionálny Python vývojár a lektor s viac ako desaťročnými skúsenosťami v praxi. Moje kurzy spájajú dôkladné základy s praktickým, projektovým učením, aby ste získali zručnosti, ktoré zamestnávatelia skutočne hľadajú.</p>
+                <p>Či ste úplný začiatočník alebo skúsený vývojár, ktorý chce využiť silu AI, nájdete kurz navrhnutý presne pre vás.</p>
             </div>
-            <div class="stats-grid stats-grid-standalone">
-                <div class="stat-card">
-                    <div class="stat-number">5K+</div>
-                    <div class="stat-label">Študentov</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">3</div>
-                    <div class="stat-label">Kurzy</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Rokov praxe</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">4.9&#9733;</div>
-                    <div class="stat-label">Hodnotenie</div>
+            
+            <div class="featured-card">
+                <div class="featured-card-icon">&#129302;</div>
+                <div class="featured-card-content">
+                    <span class="featured-card-label">NAJPOPULÁRNEJŠÍ KURZ</span>
+                    <h3 class="featured-card-title">Python AI programovanie</h3>
+                    <p class="featured-card-desc">Komplexný kurz budovania inteligentných systémov. Naučte sa Scikit-Learn, TensorFlow a OpenAI API.</p>
+                    <a href="python-ai-programovanie.html" class="featured-card-link">Začať študovať →</a>
                 </div>
             </div>
         </div>
