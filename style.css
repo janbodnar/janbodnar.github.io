@@ -635,7 +635,7 @@ footer p {
     .hero-code { display: none; }
     .about-grid { grid-template-columns: 1fr; }
     .about-photo { width: 150px; margin: 0 auto 1rem; }
-    .stats-grid { grid-template-columns: repeat(4, 1fr); }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 600px) {
