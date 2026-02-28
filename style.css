@@ -98,6 +98,37 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
+/* Python code watermark */
+.hero-code-bg,
+.hero-code-bg-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    line-height: 1.9;
+    color: var(--blue);
+    opacity: 0.3;
+    white-space: pre;
+    pointer-events: none;
+    user-select: none;
+    padding: 2rem 3%;
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.6) 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.6) 70%, transparent 100%);
+}
+
+.hero-code-bg {
+    left: 0;
+    width: 45%;
+}
+
+.hero-code-bg-right {
+    right: 0;
+    width: 45%;
+    padding-left: 15%;
+}
+
 /* Radial background glow */
 #hero::before {
     content: '';
